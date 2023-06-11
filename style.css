@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(240, 232, 232);
+  font-family: Irish Grover, cursive;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#getEmail , #getPassword {
+  margin: 0 5px;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+.trybewarts-header-logo {
+  height: 45px;
+}
+
+#trybewarts-header-title {
+  display: flex;
+  justify-content: center;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  margin: 5% auto;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  border: 1px solid rgb(87, 84, 84);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(87, 84, 84);
+  background-color: white;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  margin-left: 100px;
+}
+
+.bloco-nome-sobrenome , .bloco-email-casa {
+  display: flex;
+  margin: 20px;
+}
+
+.bloco-nome , .bloco-email {
+  margin-right: 20px;
+}
+
+.bloco-familia , .bloco-conteudo , .bloco-avaliacao , .bloco-comentario {
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  line-height: 25px;
+}
+
+.espacamento {
+  margin-right: 10px;
+}
+
+#textarea {
+  margin-top: 10px;
+  width: 90%;
+  height: 120px;
+  resize: none;
+}
+
+#label-infos {
+  margin-left: 20px;
+}
+
+#submit-btn {
+  margin-left: 450px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-family: Irish Grover, cursive;
+}
+
+#rodape {
+  text-align: center;
+  background-color: gray;
+  padding: 10px;
+}
+
+#form-data {
+  display: none;
+  width: 675px;
+  border: 1px solid rgb(87, 84, 84);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(87, 84, 84);
+  background-color: white;
+  font-family: fantasy;
+}
+
+#form-data div {
+  margin-left: 20px;
+  margin-top: 17px;
+  font-size: larger;
+}

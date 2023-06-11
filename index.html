@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+  <title>Formulário Trybewarts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <img src="images/trybewarts-header-logo.svg" alt="" class="trybewarts-header-logo">
+
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+
+    <form action="" method="get" class="trybewarts-login">
+      <label for="getEmail"> E-mail</label>
+      <input type="email" name="email" id="getEmail" placeholder="Email">
+
+      <label for="getPassoword"> Password</label>
+      <input type="password" name="password" id="getPassword" placeholder="Senha">
+      <button id="loginButton">Entrar</button>
+    </form>
+
+  </header>
+  <main id="main">
+    <form action="" method="post" id="evaluation-form">
+
+      <div class="bloco-nome-sobrenome">
+        <div class="bloco-nome">
+          <label for="input-name">Nome: </label><br>
+          <input type="text" name="nome" id="input-name" placeholder="Nome">
+        </div>
+        <div class="bloco-sobrenome">
+          <label for="input-lastname">Sobrenome: </label><br>
+          <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
+        </div>
+      </div>
+      <div class="bloco-email-casa">
+        <div class="bloco-email">
+          <label for="input-email">Email: </label>
+          <input type="email" name="email" id="input-email" placeholder="Email">
+        </div>
+        <div class="bloco-casa">
+          <label for="house">Casa: </label>
+          <select name="house" id="house">
+            <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+            <option id="corvinode-house" value="Corvinode">Corvinode</option>
+            <option id="pytherina-house" value="Pytherina">Pytherina</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <fieldset class="bloco-familia">
+          <legend><label for="label-family" id="label-family">Qual sua família?</label></legend>
+          <input type="radio" name="family" value="Frontend" id="frontend">
+          <label for="frontend">Frontend</label><br>
+          <input type="radio" name="family" value="Backend" id="backend">
+          <label for="backend">Backend</label><br>
+          <input type="radio" name="family" value="FullStack" id="fullstack">
+          <label for="fullstack">FullStack</label><br>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset class="bloco-conteudo">
+          <legend><label for="label-content" id="label-content">Qual conteúdo você está com mais vontade de
+              aprender?</label></legend>
+          <input type="checkbox" name="hofs" id="hofs" class="subject" value="HoFs">
+          <label for="hofs">HoFs</label><br>
+          <input type="checkbox" name="jest" id="jest" class="subject" value="Jest">
+          <label for="jest">Jest</label><br>
+          <input type="checkbox" name="promises" id="promises" class="subject" value="Promises">
+          <label for="promises">Promises</label><br>
+          <input type="checkbox" name="react" id="react" class="subject" value="React">
+          <label for="react">React</label><br>
+          <input type="checkbox" name="SQL" id="SQL" class="subject" value="SQL">
+          <label for="SQL">SQL</label><br>
+          <input type="checkbox" name="python" id="python" class="subject" value="Python">
+          <label for="python">Python</label><br>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset class="bloco-avaliacao">
+          <legend><label for="label-rate" id="label-rate">Como você avalia a Trybewarts?</label></legend>
+          <input type="radio" name="rate" value="1" id="avaliacao-1">
+          <label for="avaliacao-1" class="espacamento">1</label>
+          <input type="radio" name="rate" value="2" id="avaliacao-2">
+          <label class="espacamento" for="avaliacao-2">2</label>
+          <input type="radio" name="rate" value="3" id="avaliacao-3">
+          <label class="espacamento" for="avaliacao-3">3</label>
+          <input type="radio" name="rate" value="4" id="avaliacao-4">
+          <label class="espacamento" for="avaliacao-4">4</label>
+          <input type="radio" name="rate" value="5" id="avaliacao-5">
+          <label class="espacamento" for="avaliacao-5">5</label>
+          <input type="radio" name="rate" value="6" id="avaliacao-6">
+          <label class="espacamento" for="avaliacao-6">6</label>
+          <input type="radio" name="rate" value="7" id="avaliacao-7">
+          <label class="espacamento" for="avaliacao-7">7</label>
+          <input type="radio" name="rate" value="8" id="avaliacao-8">
+          <label class="espacamento" for="avaliacao-8">8</label>
+          <input type="radio" name="rate" value="9" id="avaliacao-9">
+          <label class="espacamento" for="avaliacao-9">9</label>
+          <input type="radio" name="rate" value="10" id="avaliacao-10">
+          <label class="espacamento" for="avaliacao-10">10</label>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset class="bloco-comentario">
+          <legend><label for="comentario" class="textarea">Deixe seu comentário:</label></legend>
+          <textarea name="comentario" id="textarea" maxlength="500"></textarea>
+          <code id="counter">500</code>
+        </fieldset>
+      </div>
+      <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?
+        <input type="checkbox" name="acordo" id="agreement">
+      </label><br>
+      <button type="submit" id="submit-btn" disabled>Enviar</button>
+    </form>
+    <div id="form-data">
+      <div id="log1"></div>
+      <div id="log2"></div>
+      <div id="log3"></div>
+      <div id="log4"></div>
+      <div id="log5"></div>
+      <div id="log6"></div>
+      <div id="log7"></div>
+    </div>
+    <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
+  </main>
+  <code>
+    <footer id="rodape"><strong>"Direitos reservados à Trybewarts©"</strong>
+  </footer>
+  </code>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
